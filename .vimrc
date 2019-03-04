@@ -25,3 +25,10 @@ augroup myTodo
   autocmd Syntax * syntax match myTodo /\v\_.<(TODO|FIXME).*/hs=s+1 containedin=.*Comment
 augroup END
 highlight link myTodo Todo
+
+" Spell Check
+"   I have this on by default. To add to dictionary, go to the word and type 'zg'
+set spelllang=en
+set spellfile=$HOME/Dropbox/vim/spell/en.utf-8.add
+set spell
+
